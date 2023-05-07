@@ -40,6 +40,7 @@ class _FormEditScreenState extends State<FormEditScreen> {
     categoryController.text = widget.data.category.toString();
   }
 
+//widget untuk membuat form terdiri dari TextFormField dan ElevatedButton untuk trigger simpan data
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,7 +118,6 @@ class _FormEditScreenState extends State<FormEditScreen> {
                         return null;
                       },
                     ),
-                   
                     Container(
                         child: Align(
                             alignment: Alignment.centerRight,

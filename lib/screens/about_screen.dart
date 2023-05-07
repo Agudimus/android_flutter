@@ -10,6 +10,7 @@ class AboutScreen extends StatefulWidget {
 }
 
 class _AboutScreenState extends State<AboutScreen> {
+  //widget untuk membuat halaman about terdiri dari widget Text
   @override
   Widget build(BuildContext context) {
     return Scaffold(

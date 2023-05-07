@@ -43,6 +43,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+//widget untuk memanggil home screen
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {

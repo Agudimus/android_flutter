@@ -22,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Provider.of<TransactionProvider>(context, listen: false).initAllData();
   }
 
+//widget dengan kontek iconButton untuk berpindah halaman ke halaman FormScreen dan About Screen
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               );
             } else {
+              //widget list view untuk menampilkan daftar dari input yang sudah diinput di form
               return ListView.builder(
                 itemCount: providers.transactions.length,
                 itemBuilder: (context, int index) {
@@ -96,11 +98,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(fontSize: 15),
                           ),
                           onTap: () {
+                            //untuk berpindah ke FormEditScreen
                             Navigator.push(context,
                                 MaterialPageRoute(builder: (context) {
                               return FormEditScreen(data: data);
                             }));
                           },
+                          //untuk menghapus data
                           trailing: IconButton(
                               icon: const Icon(Icons.delete),
                               onPressed: () {
